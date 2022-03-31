@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandInfraDataset
+xmlns="http://www.opengis.net/infragml/core/1.0"
+xmlns:gml="http://www.opengis.net/gml/3.2"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:li="http://www.opengis.net/infragml/core/1.0"
+xmlns:lif="http://www.opengis.net/infragml/facility/1.0"
+xmlns:lip="http://www.opengis.net/infragml/project/1.0"
+xmlns:gmllr="http://www.opengis.net/gml/3.3/lr" 
+gml:id="ds2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.opengis.net/infragml/project/1.0 Part2Project0410.xsd">
+	<!--  Implementation of LandInfaDataset LandInfra RC with Road Register  -->
+	<datasetID>
+		<ID>
+			<identifier>Highway30-05_Facility</identifier>
+			<scope>Korean Road register Information</scope>
+		</ID>
+	</datasetID>
+	<name>BRIDGE Road register dataset</name>
+	<description>BRIDGE Road register dataset encoded to Facility LandInfra</description>
+	<dateTime>2022-03-23T15:00:00</dateTime>
+	<datasetVersion>1.0</datasetVersion>
+	<application>manual</application>
+	<author>Munkhbaatar</author>
+	<infraVersion>1.0</infraVersion>
+	<language>English</language>
+	<defaultCRS xlink:href="EPSG:5179"/>
+	<!--  Implementation of Bridge Road Register with Facility RC  -->
+	<feature>
+		<lif:Facility gml:id="f1">
+			<lif:facilityID>
+				<lif:ID>
+					<identifier>Highway30</identifier>
+				</lif:ID>
+			</lif:facilityID>
+			<lif:type>highway</lif:type>
+			<lif:status>in service</lif:status>
+			<lif:footprint xlink:href="linestring1" xlink:title="LineString"></lif:footprint>
+			<lif:part xlink:href="fp1"/>
+		</lif:Facility>
+	</feature>
+	<feature>
+		<lif:BRIDGE gml:id="fp1">
+			<lif:facilityPartID>
+				<lif:ID>
+					<identifier>C0215025100300520160002</identifier>
+				</lif:ID>
+			</lif:facilityPartID>
+			<lif:type>bridge</lif:type>
+			<lif:status>in service</lif:status>
+			<lif:footprint xlink:href="poly1" xlink:title="Polygon"/>
+			<gml:description>second class I-Beam type concrete bridge of highway 30 section 05</gml:description>
+			<gml:name>Geumpan bridge</gml:name>
+			<spatialRepresentation>
+				<SpatialRepresentation>
+					<geometry>
+						<Polygon gml:id="polygon1">
+							<IndexedPointList>
+								<IndexedPoint>
+									<index>1</index>
+									<coordinates>933884 1748509</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>2</index>
+									<coordinates>934018 1748487</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>3</index>
+									<coordinates>934004 1748448</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>4</index>
+									<coordinates>933871 1748470</coordinates>
+								</IndexedPoint>
+							</IndexedPointList>
+						</Polygon>
+					</geometry>
+				</SpatialRepresentation>
+			</spatialRepresentation>
+			<linearlyReferencedLocation>
+				<LinearlyReferencedLocation>
+					<linearFromToLocation>
+						<LinearFromToLocation>
+							<fromPosition>
+								<gmllr:PositionExpression gml:id="pe1">
+									<gmllr:linearElement>Geumpan bridge of Highway 30 section 05</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:distanceExpression>
+										<gmllr:DistanceExpression gml:id="de1">
+											<gmllr:distanceAlong uom="km">3.375</gmllr:distanceAlong>
+										</gmllr:DistanceExpression>
+									</gmllr:distanceExpression>
+								</gmllr:PositionExpression>
+							</fromPosition>
+							<toPosition>
+								<gmllr:PositionExpression gml:id="pe2">
+									<gmllr:linearElement>Geumpan bridge of Highway 30 section 05</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:distanceExpression>
+										<gmllr:DistanceExpression gml:id="de2">
+											<gmllr:distanceAlong uom="km">3.510</gmllr:distanceAlong>
+										</gmllr:DistanceExpression>
+									</gmllr:distanceExpression>
+								</gmllr:PositionExpression>
+							</toPosition>
+						</LinearFromToLocation>
+					</linearFromToLocation>
+				</LinearlyReferencedLocation>
+			</linearlyReferencedLocation>
+			<linearlyReferencedLocation>
+				<LinearlyReferencedLocation>
+					<linearAtLocation>
+						<LinearAtLocation>
+							<atPosition>Hajang-ri, Dongjin-myeon, Buan-gun</atPosition>
+						</LinearAtLocation>
+					</linearAtLocation>
+				</LinearlyReferencedLocation>
+			</linearlyReferencedLocation>
+			<lif:bridgeLength uom="m">135</lif:bridgeLength>
+			<lif:structureLevel>secondClassBridge</lif:structureLevel>
+			<lif:columnType>I-BeamBridge</lif:columnType>
+			<lif:columnQuantity>6 EA</lif:columnQuantity>
+		    .....
+			<lif:relationship>
+				<lif:FacilityPartRelationship gml:id="fpr1">
+					<lif:relationship>supports</lif:relationship>
+					<lif:description>Geumpan bridge carries highway 30 section 05 across a canal</lif:description>
+					<lif:facilityPart xlink:href="r1"/>
+				</lif:FacilityPartRelationship>
+			</lif:relationship>
+		</lif:BRIDGE>
+	</feature>
+</LandInfraDataset>
