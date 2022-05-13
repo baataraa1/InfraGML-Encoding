@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LandInfraDataset
+ xmlns="http://www.opengis.net/infragml/core/1.0"
+                  xmlns:gml="http://www.opengis.net/gml/3.2"
+                  gml:id="ds4a"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:li="http://www.opengis.net/infragml/core/1.0"
+                  xmlns:lilf="http://www.opengis.net/infragml/landfeature/1.0"
+                  xmlns:lif="http://www.opengis.net/infragml/facility/1.0"
+                  xmlns:lia="http://www.opengis.net/infragml/alignment/1.0"
+                  xmlns:lifr="http://www.opengis.net/infragml/road/1.0"
+                  xmlns:gmllr="http://www.opengis.net/gml/3.3/lr"
+                  xmlns:gmllro="http://www.opengis.net/gml/3.3/lro"
+                  xmlns:tin="http://www.opengis.net/gml/3.3/tin"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.opengis.net/infragml/road/1.0 Part4Road0410.xsd">
+	<!--  Implementation of LandInfaDataset LandInfra RC with Road Register  -->
+	<datasetID>
+		<ID>
+			<identifier>Highway30-05_Road</identifier>
+			<scope>Korean Road register Information</scope>
+		</ID>
+	</datasetID>
+	<name>Road register dataset</name>
+	<description>Road register dataset encoded to Road LandInfra</description>
+	<dateTime>2022-03-23T15:00:00</dateTime>
+	<datasetVersion>1.0</datasetVersion>
+	<application>manual</application>
+	<author>Munkhbaatar</author>
+	<infraVersion>1.0</infraVersion>
+	<language>English</language>
+	<defaultCRS xlink:href="EPSG:5179"/>
+	<!--  Implementation of SLOPE Road Register with Road RC  -->
+	<feature>
+		<lif:Facility gml:id="fac1">
+			<lif:facilityID>
+				<lif:ID>
+					<identifier>Highway30</identifier>
+				</lif:ID>
+			</lif:facilityID>
+			<lif:type>highway</lif:type>
+			<lif:status>in service</lif:status>
+			<lif:footprint xlink:href="linestring1" xlink:title="LineString"/>
+			<lif:part xlink:href="r1"/>
+		</lif:Facility>
+	</feature>
+	<feature>
+		<lifr:SLOPE gml:id="r1">
+			<lif:facilityPartID>
+				<lif:ID>
+					<identifier>Highway30_05</identifier>
+				</lif:ID>
+			</lif:facilityPartID>
+			<lif:type>road</lif:type>
+			<lif:status>in service</lif:status>
+			<gml:description>road slope of highway 30 section 05</gml:description>
+			<gml:name>road slope</gml:name>
+			<spatialRepresentation>
+				<SpatialRepresentation>
+					<geometry xlink:href="linestring1" xlink:title="LineString"/>
+				</SpatialRepresentation>
+			</spatialRepresentation>
+			<linearlyReferencedLocation>
+				<LinearlyReferencedLocation>
+					<linearFromToLocation>
+						<LinearFromToLocation>
+							<fromPosition>
+								<gmllr:PositionExpression gml:id="pe1">
+									<gmllr:linearElement>Highway 30 section 05 centerline longitudinal slope</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:distanceExpression>
+										<gmllr:DistanceExpression gml:id="de1">
+											<gmllr:distanceAlong uom="m">0</gmllr:distanceAlong>
+										</gmllr:DistanceExpression>
+									</gmllr:distanceExpression>
+								</gmllr:PositionExpression>
+							</fromPosition>
+							<toPosition>
+								<gmllr:PositionExpression gml:id="pe2">
+									<gmllr:linearElement>Highway 30 section 05 centerline longitudinal slope</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:distanceExpression>
+										<gmllr:DistanceExpression gml:id="de2">
+											<gmllr:distanceAlong uom="m">1170</gmllr:distanceAlong>
+										</gmllr:DistanceExpression>
+									</gmllr:distanceExpression>
+								</gmllr:PositionExpression>
+							</toPosition>
+						</LinearFromToLocation>
+					</linearFromToLocation>
+				</LinearlyReferencedLocation>
+			</linearlyReferencedLocation>
+			<lifr:roadID>
+				<lifr:ID>
+					<identifier>C0115025100300520160001</identifier>
+				</lifr:ID>
+			</lifr:roadID>
+			<lifr:approximateWidth uom="m">20</lifr:approximateWidth>
+			<lia:roadName>Buan to Daegu</lia:roadName>
+			<lia:roadMaintenanceOffice>51 Jeonju</lia:roadMaintenanceOffice>
+			<!--  Sample of road surface StringLines for representing 3D geoinformation  -->	
+			<lifr:stringLineSet>
+				<lifr:StringLineSet gml:id="sls1">
+					<gml:description>string lines delineating the road slope</gml:description>
+					<gml:name>road slope</gml:name>
+					<lifr:stringLineSetID>
+						<lifr:identifier>R1815025100300520160023</lifr:identifier>
+					</lifr:stringLineSetID>
+					<lifr:stringLine>
+						<lifr:StringLine gml:id="sl1">
+							<gml:description>slope</gml:description>
+							<gml:name>left line slope</gml:name>
+							<lifr:stringLineID>
+								<lifr:identifier>LLS1</lifr:identifier>
+							</lifr:stringLineID>
+							<lifr:geometry gml:id="ls1">
+								<gml:pos>930918 1750030 14.490</gml:pos>
+								<gml:pos>931062 1749961 12.330</gml:pos>
+							</lifr:geometry>
+						</lifr:StringLine>
+					</lifr:stringLine>
+					<lifr:stringLine>
+						<lifr:StringLine gml:id="sl2">
+							<gml:description>slope</gml:description>
+							<gml:name>centerline slope</gml:name>
+							<lifr:stringLineID>
+								<lifr:identifier>CLS1</lifr:identifier>
+							</lifr:stringLineID>
+							<lifr:geometry gml:id="ls2">
+								<gml:pos>930912 1750019 14.490</gml:pos>
+								<gml:pos>931058 1749953 12.330</gml:pos>
+							</lifr:geometry>
+							<lifr:alternativeGeometry xlink:href="ac1"/>
+						</lifr:StringLine>
+					</lifr:stringLine>
+					<lifr:stringLine>
+						<lifr:StringLine gml:id="sl3">
+							<gml:description>slope</gml:description>
+							<gml:name>right line slope</gml:name>
+							<lifr:stringLineID>
+								<lifr:identifier>RLS1</lifr:identifier>
+							</lifr:stringLineID>
+							<lifr:geometry gml:id="ls3">
+								<gml:pos>930904 1750005 14.490</gml:pos>
+								<gml:pos>931050 1749941 12.330</gml:pos>
+							</lifr:geometry>
+						</lifr:StringLine>
+					</lifr:stringLine>
+				</lifr:StringLineSet>
+			</lifr:stringLineSet>	
+			<lifr:stringLineSet>
+				<lifr:StringLineSet gml:id="sls2">
+					<gml:description>string lines delineating the road slope</gml:description>
+					<gml:name>road slope</gml:name>
+					<lifr:stringLineSetID>
+						<lifr:identifier>R1815025100300520160022</lifr:identifier>
+					</lifr:stringLineSetID>
+					<lifr:stringLine>
+						<lifr:StringLine gml:id="sl2">
+							<gml:description>slope</gml:description>
+							<gml:name>left line slope</gml:name>
+							<lifr:stringLineID>
+								<lifr:identifier>LLS1</lifr:identifier>
+							</lifr:stringLineID>
+							<lifr:geometry gml:id="ls1">
+								<gml:pos>931062 1749961 12.330</gml:pos>
+								<gml:pos>931350 1749782 12.330</gml:pos>
+							</lifr:geometry>
+						</lifr:StringLine>
+					</lifr:stringLine>
+					<lifr:stringLine>
+						<lifr:StringLine gml:id="sl2">
+							<gml:description>slope</gml:description>
+							<gml:name>centerline slope</gml:name>
+							<lifr:stringLineID>
+								<lifr:identifier>CLS1</lifr:identifier>
+							</lifr:stringLineID>
+							<lifr:geometry gml:id="ls2">
+								<gml:pos>931058 1749953 12.330</gml:pos>
+								<gml:pos>931346 1749774 12.330</gml:pos>
+							</lifr:geometry>
+							<lifr:alternativeGeometry xlink:href="ac1"/>
+						</lifr:StringLine>
+					</lifr:stringLine>
+					<lifr:stringLine>
+						<lifr:StringLine gml:id="sl3">
+							<gml:description>slope</gml:description>
+							<gml:name>right line slope</gml:name>
+							<lifr:stringLineID>
+								<lifr:identifier>RLS1</lifr:identifier>
+							</lifr:stringLineID>
+							<lifr:geometry gml:id="ls3">
+								<gml:pos>931050 1749941 12.330</gml:pos>
+								<gml:pos>931339 1749764 12.330</gml:pos>
+							</lifr:geometry>
+						</lifr:StringLine>
+					</lifr:stringLine>
+				</lifr:StringLineSet>
+			</lifr:stringLineSet>
+			.....
+            <!--  Sample of triangulated road surface for representing 3D geoinformation  -->			
+			<lifr:surface>
+				<lifr:Surface gml:id="sur1">
+					<gml:description>surfaces delineating the road slope</gml:description>
+					<gml:name>road slope</gml:name>
+					<lifr:surfaceID>
+						<lifr:identifier>R1815025100300520160023</lifr:identifier>
+					</lifr:surfaceID>
+					<lifr:geometry gml:id="tin1" xsi:type="tin:TINType">
+						<gml:trianglePatches>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>931062	1749961	12.330</gml:pos>
+								<gml:pos>930918	1750030	14.490</gml:pos>
+								<gml:pos>930912	1750019	14.490</gml:pos>
+							</tin:SimpleTrianglePatch>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>930912	1750019	14.490</gml:pos>
+								<gml:pos>931058	1749953	12.330</gml:pos>
+								<gml:pos>931062	1749961	12.330</gml:pos>
+							</tin:SimpleTrianglePatch>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>931058	1749953	12.330</gml:pos>
+								<gml:pos>930912	1750019	14.490</gml:pos>
+								<gml:pos>930904	1750005	14.490</gml:pos>
+							</tin:SimpleTrianglePatch>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>930904	1750005	14.490</gml:pos>
+								<gml:pos>931050	1749941	12.330</gml:pos>
+								<gml:pos>931058	1749953	12.330</gml:pos>
+							</tin:SimpleTrianglePatch>
+						</gml:trianglePatches>
+					</lifr:geometry>
+				</lifr:Surface>
+			</lifr:surface>
+			<lifr:surface>
+				<lifr:Surface gml:id="sur2">
+					<gml:description>surfaces delineating the road slope</gml:description>
+					<gml:name>road slope</gml:name>
+					<lifr:surfaceID>
+						<lifr:identifier>R1815025100300520160022</lifr:identifier>
+					</lifr:surfaceID>
+					<lifr:geometry gml:id="tin2" xsi:type="tin:TINType">
+						<gml:trianglePatches>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>931350	1749782	12.330</gml:pos>
+								<gml:pos>931062	1749961	12.330</gml:pos>
+								<gml:pos>931058	1749953	12.330</gml:pos>
+							</tin:SimpleTrianglePatch>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>931058	1749953	12.330</gml:pos>
+								<gml:pos>931346	1749774	12.330</gml:pos>
+								<gml:pos>931350	1749782	12.330</gml:pos>
+							</tin:SimpleTrianglePatch>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>931346	1749774	12.330</gml:pos>
+								<gml:pos>931058	1749953	12.330</gml:pos>
+								<gml:pos>931050	1749941	12.330</gml:pos>
+							</tin:SimpleTrianglePatch>
+							<tin:SimpleTrianglePatch>
+								<gml:pos>931050	1749941	12.330</gml:pos>
+								<gml:pos>931339	1749764	12.330</gml:pos>
+								<gml:pos>931346	1749774	12.330</gml:pos>
+							</tin:SimpleTrianglePatch>
+						</gml:trianglePatches>
+					</lifr:geometry>
+				</lifr:Surface>
+			</lifr:surface>
+			.....
+		</lifr:SLOPE>
+	</feature>
+	<!--  Implementation of WALL Road Register with Road RC  -->
+	<feature>
+		<lif:Facility gml:id="fac1">
+			<lif:facilityID>
+				<lif:ID>
+					<identifier>Highway30</identifier>
+				</lif:ID>
+			</lif:facilityID>
+			<lif:type>highway</lif:type>
+			<lif:status>in service</lif:status>
+			<lif:footprint xlink:href="linestring1" xlink:title="LineString"/>
+			<lif:part xlink:href="r2"/>
+		</lif:Facility>
+	</feature>
+	<feature>
+		<lifr:Road gml:id="r2">
+			<lif:facilityPartID>
+				<lif:ID>
+					<identifier>Highway30_05</identifier>
+				</lif:ID>
+			</lif:facilityPartID>
+			<lif:type>road</lif:type>
+			<lif:status>in service</lif:status>
+			<lifr:roadID>
+				<lifr:ID>
+					<identifier>C0115025100300520160001</identifier>
+				</lifr:ID>
+			</lifr:roadID>
+			<lifr:approximateWidth uom="m">20</lifr:approximateWidth>
+		</lifr:Road>
+	</feature>
+	<feature>
+		<lifr:WALL gml:id="wl1">
+			<lifr:roadElementID>
+				<lifr:ID>
+					<identifier>C1215025100300520160001</identifier>
+				</lifr:ID>
+			</lifr:roadElementID>
+			<lifr:roadElementType>retainingWall_RR</lifr:roadElementType>
+			<lifr:material>stone</lifr:material>
+			<gml:description>one of three retaining wall of highway 30 section 05</gml:description>
+			<gml:name>retaining wall</gml:name>
+			<spatialRepresentation>
+				<SpatialRepresentation>
+					<geometry xlink:href="linestring1" xlink:title="LineString"/>
+				</SpatialRepresentation>
+			</spatialRepresentation>
+			<linearlyReferencedLocation>
+				<LinearlyReferencedLocation>
+					<linearFromToLocation>
+						<LinearFromToLocation>
+							<fromPosition>
+								<gmllr:PositionExpression gml:id="pe1">
+									<gmllr:linearElement>Highway 30 section 05 retaining wall</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:LateralOffsetDistanceExpression>
+										<gmllr:distanceAlong uom="km">0.870</gmllr:distanceAlong>
+										<gmllr:lateralOffsetDistanceExpression>
+											<gmllr:LateralOffsetExpression>
+												<gmllr:lateralOffset uom="m">13</gmllr:lateralOffset>
+											</gmllr:LateralOffsetExpression>
+										</gmllr:lateralOffsetDistanceExpression>
+									</gmllr:LateralOffsetDistanceExpression>
+								</gmllr:PositionExpression>
+							</fromPosition>
+							<toPosition>
+								<gmllr:PositionExpression gml:id="pe2">
+									<gmllr:linearElement>Highway 30 section 05 retaining wall</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:LateralOffsetDistanceExpression>
+										<gmllr:distanceAlong uom="km">1.040</gmllr:distanceAlong>
+										<gmllr:lateralOffsetDistanceExpression>
+											<gmllr:LateralOffsetExpression>
+												<gmllr:lateralOffset uom="m">13</gmllr:lateralOffset>
+											</gmllr:LateralOffsetExpression>
+										</gmllr:lateralOffsetDistanceExpression>
+									</gmllr:LateralOffsetDistanceExpression>
+								</gmllr:PositionExpression>
+							</toPosition>
+						</LinearFromToLocation>
+					</linearFromToLocation>
+				</LinearlyReferencedLocation>
+			</linearlyReferencedLocation>
+			<lifr:wallLength uom="m">170</lifr:wallLength>
+			<lifr:wallHeightMax uom="m">5.4</lifr:wallHeightMax>
+			<lifr:wallHeightMin uom="m">5.4</lifr:wallHeightMin>
+			<lifr:wallWidth uom="m">0.5</lifr:wallWidth>
+            .....
+			<lifr:alignment xlink:href="ra1"/>
+		</lifr:WALL>
+	</feature>
+	<feature>
+		<lia:Alignment gml:id="ra1">
+			<lia:alignmentID>
+				<lia:ID>
+					<identifier>Alignment_Highway30_05</identifier>
+				</lia:ID>
+			</lia:alignmentID>
+			<lia:purpose>describing retaining wall</lia:purpose>
+			<lia:geometry>
+				<lia:AlignmentCurve gml:id="ac1">
+					<lia:crs xlink:href="ecrs1"/>
+					<lia:horizontal>
+						<lia:Alignment2DHorizontal gml:id="ah1">
+							<lia:location>Retaining wall along with Highway 30 section 05</lia:location>
+							<lia:description>Retaining wall along with Highway 30 section 05</lia:description>
+							<lia:state>existing</lia:state>
+							<lia:segment>
+								<lia:Alignment2DHorSegment>
+									<lia:tangentialContinuity>false</lia:tangentialContinuity>
+									<lia:geometry>
+										<lia:LineSegment>
+											<gml:pos>931665 1749586</gml:pos>
+											<gml:pos>931810 1749499</gml:pos>
+										</lia:LineSegment>
+									</lia:geometry>
+								</lia:Alignment2DHorSegment>
+							</lia:segment>
+						</lia:Alignment2DHorizontal>
+					</lia:horizontal>
+				</lia:AlignmentCurve>
+			</lia:geometry>
+		</lia:Alignment>
+	</feature>
+	<!--  Implementation of PMS_ASP_STRUC Road Register with Road RC  -->
+	<feature>
+		<lif:Facility gml:id="fac1">
+			<lif:facilityID>
+				<lif:ID>
+					<identifier>Highway30</identifier>
+				</lif:ID>
+			</lif:facilityID>
+			<lif:type>highway</lif:type>
+			<lif:status>in service</lif:status>
+			<lif:footprint xlink:href="polyfaceMesh1" xlink:title="PolyfaceMesh"/>
+			<lif:part xlink:href="r2"/>
+		</lif:Facility>
+	</feature>
+	<feature>
+		<lifr:Road gml:id="r2">
+			<lif:facilityPartID>
+				<lif:ID>
+					<identifier>Highway30_05</identifier>
+				</lif:ID>
+			</lif:facilityPartID>
+			<lif:type>road</lif:type>
+			<lif:status>in service</lif:status>
+			<lifr:roadID>
+				<lifr:ID>
+					<identifier>C0115025100300520160001</identifier>
+				</lifr:ID>
+			</lifr:roadID>
+			<lifr:approximateWidth uom="m">20</lifr:approximateWidth>
+		</lifr:Road>
+	</feature>
+	<!--  Sample of Asphalt pavement structure as RoadElement PolyfaceMesh for representing 3D geoinformation  -->
+	<feature>
+		<lifr:PMS_ASP_STRUC gml:id="asph1">
+			<gml:description>20cm asphalt surface course of highway 30 section 05</gml:description>
+			<gml:name>asphalt pavement</gml:name>	
+			<spatialRepresentation>
+				<SpatialRepresentation>
+					<geometry>
+						<PolyfaceMesh gml:id="mesh1">
+							<IndexedPointList>
+								<IndexedPoint>
+									<index>1</index>
+									<coordinates>931062	1749961 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>2</index>
+									<coordinates>931058	1749953 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>3</index>
+									<coordinates>931050	1749941 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>4</index>
+									<coordinates>931062	1749961 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>5</index>
+									<coordinates>931058	1749953 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>6</index>
+									<coordinates>931050	1749941 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>7</index>
+									<coordinates>930918	1750030 14.490</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>8</index>
+									<coordinates>930912	1750019 14.490</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>9</index>
+									<coordinates>930904	1750005 14.490</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>10</index>
+									<coordinates>930918	1750030 14.290</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>11</index>
+									<coordinates>930912	1750019 14.290</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>12</index>
+									<coordinates>930904	1750005 14.290</coordinates>
+								</IndexedPoint>
+							</IndexedPointList>
+							<SimpleIndexedPolygonList>
+								<SimpleIndexedPolygon gml:id="f1">
+									<pointIndex>1 2 5 4</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f2">
+									<pointIndex>2 3 6 5</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f3">
+									<pointIndex>1 4 10 7</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f4">
+									<pointIndex>3 9 12 6</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f5">
+									<pointIndex>8 7 10 11</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f6">
+									<pointIndex>9 8 11 12</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f7">
+									<pointIndex>2 1 7 8</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f8">
+									<pointIndex>3 2 8 9</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f9">
+									<pointIndex>4 5 11 10</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f10">
+									<pointIndex>5 6 12 11</pointIndex>
+								</SimpleIndexedPolygon>
+							</SimpleIndexedPolygonList>
+						</PolyfaceMesh>
+					</geometry>
+					<geometry>
+						<PolyfaceMesh gml:id="mesh2">
+							<IndexedPointList>
+								<IndexedPoint>
+									<index>1</index>
+									<coordinates>931350	1749782	12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>2</index>
+									<coordinates>931346	1749774 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>3</index>
+									<coordinates>931339	1749764 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>4</index>
+									<coordinates>931350	1749782 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>5</index>
+									<coordinates>931346	1749774 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>6</index>
+									<coordinates>931339	1749764 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>7</index>
+									<coordinates>931062	1749961 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>8</index>
+									<coordinates>931058	1749953 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>9</index>
+									<coordinates>931050	1749941 12.330</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>10</index>
+									<coordinates>931062	1749961 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>11</index>
+									<coordinates>931058	1749953 12.130</coordinates>
+								</IndexedPoint>
+								<IndexedPoint>
+									<index>12</index>
+									<coordinates>931050	1749941 12.130</coordinates>
+								</IndexedPoint>
+							</IndexedPointList>
+							<SimpleIndexedPolygonList>
+								<SimpleIndexedPolygon gml:id="f1">
+									<pointIndex>1 2 5 4</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f2">
+									<pointIndex>2 3 6 5</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f3">
+									<pointIndex>1 4 10 7</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f4">
+									<pointIndex>3 9 12 6</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f5">
+									<pointIndex>8 7 10 11</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f6">
+									<pointIndex>9 8 11 12</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f7">
+									<pointIndex>2 1 7 8</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f8">
+									<pointIndex>3 2 8 9</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f9">
+									<pointIndex>4 5 11 10</pointIndex>
+								</SimpleIndexedPolygon>
+								<SimpleIndexedPolygon gml:id="f10">
+									<pointIndex>5 6 12 11</pointIndex>
+								</SimpleIndexedPolygon>
+							</SimpleIndexedPolygonList>
+						</PolyfaceMesh>
+					</geometry>
+					.....
+				</SpatialRepresentation>
+			</spatialRepresentation>
+			<linearlyReferencedLocation>
+				<LinearlyReferencedLocation>
+					<linearFromToLocation>
+						<LinearFromToLocation>
+							<fromPosition>
+								<gmllr:PositionExpression gml:id="pe1">
+									<gmllr:linearElement>Highway 30 section 05 pavement</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:distanceExpression>
+										<gmllr:DistanceExpression gml:id="de1">
+											<gmllr:distanceAlong uom="m">0</gmllr:distanceAlong>
+										</gmllr:DistanceExpression>
+									</gmllr:distanceExpression>
+								</gmllr:PositionExpression>
+							</fromPosition>
+							<toPosition>
+								<gmllr:PositionExpression gml:id="pe2">
+									<gmllr:linearElement>Highway 30 section 05 pavement</gmllr:linearElement>
+									<gmllr:lrm xlink:href="lrm1"/>
+									<gmllr:distanceExpression>
+										<gmllr:DistanceExpression gml:id="de2">
+											<gmllr:distanceAlong uom="m">500</gmllr:distanceAlong>
+										</gmllr:DistanceExpression>
+									</gmllr:distanceExpression>
+								</gmllr:PositionExpression>
+							</toPosition>
+						</LinearFromToLocation>
+					</linearFromToLocation>
+				</LinearlyReferencedLocation>
+			</linearlyReferencedLocation>
+			<lifr:roadElementID>
+				<lifr:ID>
+					<identifier>pavementAsphalt0to500</identifier>
+				</lifr:ID>
+			</lifr:roadElementID>
+			<lifr:roadElementType>pavementBaseCourse</lifr:roadElementType>
+			<lifr:material>asphalt</lifr:material>
+			<lifr:asphaltYear uom="date">20210801</lifr:asphaltYear>
+			<lifr:asphaltConcreteThick uom="cm">20</lifr:asphaltConcreteThick>
+			<lifr:gravelBaseThick uom="cm">25</lifr:gravelBaseThick>
+			<lifr:subbaseThick uom="cm">20</lifr:subbaseThick>
+            .....
+		</lifr:PMS_ASP_STRUC>
+	</feature>
+</LandInfraDataset>
+
+	
+
+
+
+
+
+
+
+
